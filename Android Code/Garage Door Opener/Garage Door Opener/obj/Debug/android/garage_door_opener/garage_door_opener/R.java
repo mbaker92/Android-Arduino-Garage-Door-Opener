@@ -10,6 +10,10 @@ package garage_door_opener.garage_door_opener;
 public final class R {
     public static final class attr {
     }
+    public static final class id {
+        public static final int Open=0x7f040001;
+        public static final int linearLayout1=0x7f040000;
+    }
     public static final class layout {
         public static final int main=0x7f020000;
     }

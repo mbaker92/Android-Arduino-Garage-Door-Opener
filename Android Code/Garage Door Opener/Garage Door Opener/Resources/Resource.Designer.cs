@@ -41,6 +41,25 @@ namespace Garage_Door_Opener
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f040001
+			public const int Open = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int linearLayout1 = 2130968576;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			

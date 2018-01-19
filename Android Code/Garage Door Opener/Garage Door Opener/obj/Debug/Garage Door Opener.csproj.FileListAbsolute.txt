@@ -1,0 +1,15 @@
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\bin\Debug\Garage Door Opener.dll
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\bin\Debug\Garage Door Opener.pdb
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\bin\Debug\Garage_Door_Opener.Garage_Door_Opener.apk
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\bin\Debug\Garage_Door_Opener.Garage_Door_Opener-Signed.apk
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\Garage Door Opener.csprojResolveAssemblyReference.cache
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\Garage Door Opener.csproj.CoreCompileInputs.cache
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\Garage Door Opener.dll
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\Garage Door Opener.pdb
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\bin\Garage_Door_Opener.Garage_Door_Opener.apk
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\res\layout\main.xml
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\res\values\strings.xml
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\R.cs.flag
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\uploadflags.txt
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\bin\Debug\Garage Door Opener.dll.mdb
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\Garage Door Opener.dll.mdb

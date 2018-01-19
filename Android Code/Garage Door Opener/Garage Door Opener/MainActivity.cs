@@ -50,6 +50,7 @@ namespace Garage_Door_Opener
                      if (status == 0)
                      {
                          status = 1;
+
                          output.WriteByte(1);
                          System.Diagnostics.Debug.WriteLine("Turned ON");
                      }
@@ -57,7 +58,7 @@ namespace Garage_Door_Opener
                      {
                          status = 0;
                          output.WriteByte(0);
-                         System.Diagnostics.Debug.WriteLine("Turned ON");
+                         System.Diagnostics.Debug.WriteLine("Turned OFF");
                      }
                  }
              };

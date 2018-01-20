@@ -72,10 +72,6 @@ namespace Garage_Door_Opener
                      }
                  }
              };
-
-
-
-
         }
 
         private bool EnableBTDevice()
@@ -138,10 +134,7 @@ namespace Garage_Door_Opener
                 }
             }
             return result;
-
         }
-
-
     }
 }
 

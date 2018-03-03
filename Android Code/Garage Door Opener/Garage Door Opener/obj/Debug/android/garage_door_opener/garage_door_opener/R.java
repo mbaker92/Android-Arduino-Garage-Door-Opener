@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
+        public static final int BluetoothList=0x7f040002;
         public static final int button1=0x7f040001;
         public static final int linearLayout1=0x7f040000;
     }

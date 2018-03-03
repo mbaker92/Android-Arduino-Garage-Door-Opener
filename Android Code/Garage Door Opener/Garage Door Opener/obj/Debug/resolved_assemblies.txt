@@ -1,12 +1,11 @@
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\Garage Door Opener.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\Java.Interop.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\Mono.Android.dll
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\mscorlib.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Core.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.dll
-D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Xml.dll
-D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\mscorlib.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Runtime.dll
-D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Xml.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Threading.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Collections.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Collections.Concurrent.dll
@@ -20,3 +19,4 @@ D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\Mono.Security.dll
+D:\Android Apps\GarageDoorOpener\Android-Arduino-Garage-Door-Opener\Android Code\Garage Door Opener\Garage Door Opener\obj\Debug\android\assets\System.ComponentModel.Composition.dll

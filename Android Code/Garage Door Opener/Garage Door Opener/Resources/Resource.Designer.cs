@@ -44,6 +44,9 @@ namespace Garage_Door_Opener
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f040002
+			public const int BluetoothList = 2130968578;
+			
 			// aapt resource value: 0x7f040001
 			public const int button1 = 2130968577;
 			

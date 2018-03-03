@@ -2,3 +2,7 @@ Garage_Door_Opener.MainActivity, Garage Door Opener;md57e44ccce502dfb82ef35361d6
 Garage_Door_Opener.MainActivity, Garage Door Opener, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57e44ccce502dfb82ef35361d64876956.MainActivity
 Garage_Door_Opener.MainActivity;md57e44ccce502dfb82ef35361d64876956.MainActivity
 garage_door_opener.MainActivity;md57e44ccce502dfb82ef35361d64876956.MainActivity
+Garage_Door_Opener.MainActivity/Receiver, Garage Door Opener;md57e44ccce502dfb82ef35361d64876956.MainActivity_Receiver
+Garage_Door_Opener.MainActivity+Receiver, Garage Door Opener, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57e44ccce502dfb82ef35361d64876956.MainActivity_Receiver
+Garage_Door_Opener.MainActivity.Receiver;md57e44ccce502dfb82ef35361d64876956.MainActivity_Receiver
+garage_door_opener.MainActivity_Receiver;md57e44ccce502dfb82ef35361d64876956.MainActivity_Receiver

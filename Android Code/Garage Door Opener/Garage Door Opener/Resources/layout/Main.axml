@@ -11,4 +11,8 @@
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:id="@+id/button1" />
+    <ListView
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/BluetoothList" />
 </LinearLayout>

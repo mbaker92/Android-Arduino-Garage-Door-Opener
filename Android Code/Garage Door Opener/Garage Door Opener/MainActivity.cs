@@ -19,8 +19,8 @@ using Android.OS;
 using Android.Bluetooth;
 using Android.Content;
 using System.Collections.Generic;
-using Java.IO;
 using System;
+using Java.Lang;
 
 namespace Garage_Door_Opener
 {
@@ -29,11 +29,16 @@ namespace Garage_Door_Opener
     {
 
         // Class Variables
-        private BluetoothAdapter bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
-        private BluetoothSocket socket;
-        private System.IO.Stream output;
-        private System.IO.Stream input;
+        private static BluetoothAdapter bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
+        private static BluetoothSocket socket;
+        private Receiver receiver;
+        private static System.IO.Stream output;
+        private static System.IO.Stream input;
         private int status = 0;
+        private static List<string> BluetoothDeviceList;
+        private static ListView BluetoothDevices;
+        private static Button OpenButton;
+        private static bool connected;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,10 +49,9 @@ namespace Garage_Door_Opener
             SetContentView(Resource.Layout.Main);
 
             // Assign Button Variable
-            Button OpenButton = FindViewById<Button>(Resource.Id.button1);
-
+            AppSetup();
             // If the connection was successful
-            bool connected = ConnectToDevice(EnableBTDevice());
+            connected = ConnectToDevice(EnableBTDevice());
 
 
             OpenButton.Click += delegate
@@ -117,14 +121,10 @@ namespace Garage_Door_Opener
                             // If the device name is equal to the HC05 adapter for the Arduino, create a connection
                             if (device.Name == "GD1")
                             {
-                                socket = device.CreateInsecureRfcommSocketToServiceRecord(Java.Util.UUID.FromString("00001101-0000-1000-8000-00805f9b34fb"));
-                                socket.Connect();
 
-                                // assign the input and output streams
-                                output = socket.OutputStream;
-                                input = socket.InputStream;
-
+                                ConnectToBluetooth(device, "GD1");
                                 // Exit function with result true
+                                OpenButton.Enabled = true;
                                 result = true;
                                 return result;
 
@@ -132,9 +132,102 @@ namespace Garage_Door_Opener
                         }
                     }
                 }
+                else
+                {
+                    Discover();
+                    receiver = new Receiver(this);
+                    var filter = new IntentFilter(BluetoothDevice.ActionFound);
+                    RegisterReceiver(receiver, filter);
+                    // Get listview of bluetooth devices to choose from
+                }
             }
             return result;
         }
+
+        private void AppSetup()
+        {
+            OpenButton = FindViewById<Button>(Resource.Id.button1);
+
+            OpenButton.Enabled = false;
+            BluetoothDevices = FindViewById<ListView>(Resource.Id.BluetoothList);
+            BluetoothDeviceList = new List<string>();
+            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, BluetoothDeviceList);
+            BluetoothDevices.Adapter = adapter;
+            BluetoothDevices.ItemClick += Listclick;
+
+
+        }
+        private void Discover()
+        {
+            if (bluetoothAdapter.IsDiscovering)
+            {
+                bluetoothAdapter.CancelDiscovery();
+            }
+            bluetoothAdapter.StartDiscovery();
+        }
+
+        private void Listclick (object sender, AdapterView.ItemClickEventArgs e)
+        {
+            bluetoothAdapter.CancelDiscovery();
+            receiver = new Receiver(this);
+            var filter = new IntentFilter(BluetoothDevice.ActionPairingRequest, (e.View as TextView).Text.ToString());
+            RegisterReceiver(receiver, filter);
+            
+        }
+
+        private static bool ConnectToBluetooth(BluetoothDevice device,string DeviceName)
+        {
+            socket = device.CreateInsecureRfcommSocketToServiceRecord(Java.Util.UUID.FromString("00001101-0000-1000-8000-00805f9b34fb"));
+            socket.Connect();
+
+            // assign the input and output streams
+            output = socket.OutputStream;
+            input = socket.InputStream;
+            return true;
+        }
+
+
+        public class Receiver : BroadcastReceiver
+        {
+            Activity opener;
+            public Receiver(Activity Opener)
+            {
+                opener = Opener;
+            }
+            public override void OnReceive(Context context, Intent intent)
+            {
+                string action = intent.Action;
+
+                if (action == BluetoothDevice.ActionFound)
+                {
+                    BluetoothDevice device = (BluetoothDevice)intent.GetParcelableExtra(BluetoothDevice.ExtraDevice);
+                    if(device.BondState != Bond.Bonded)
+                    {
+                        BluetoothDeviceList.Add(device.Name); 
+                            // Add to list
+                    }
+                }
+                if(action == BluetoothDevice.ActionPairingRequest)
+                {
+                    BluetoothDevice device = (BluetoothDevice)intent.GetParcelableExtra(BluetoothDevice.ExtraDevice);
+                    if(intent.Data.ToString() == device.Name)
+                    {
+                       if( MainActivity.ConnectToBluetooth(device, device.Name))
+                        {
+                            OpenButton.Enabled = true;
+                            connected = true;
+                        }
+                       
+                    }
+                }
+            }
+        }
+
+
+
     }
+
+
 }
+
 
